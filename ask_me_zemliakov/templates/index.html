@@ -1,0 +1,20 @@
+{% extends "inc/base.html"%}
+{% load static%}
+{%block content%}
+
+<div>
+      <h2 style="display: inline-block" >New questions</h2>
+    &nbsp &nbsp &nbsp &nbsp
+        <a href='{% url "hot" %}'>Hot Question</a>
+    </div>
+
+{% for question in questions %}
+    {% include "inc/question_item.html" %}
+{% endfor %}
+
+{% include  "inc/paginator.html" %}
+
+{% endblock content %}
+
+
+

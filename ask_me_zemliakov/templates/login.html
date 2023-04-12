@@ -1,0 +1,30 @@
+{% extends "inc/base.html"%}
+{% load static %}
+{%block content%}
+
+<h2> Log In</h2>
+<p><span style="color: red">Sorry, wrong password!</span></p>
+<div class="row">
+  <div class="col-2">
+      <div class="DownInBlock">Login</div>
+  </div>
+    <div class="col">
+        <input type="text" placeholder="Enter your login here" size="14">
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-2">
+        <div class="DownInBlock">Password</div>
+    </div>
+    <div class="col">
+        <input type="password" placeholder="somepassword" size="14">
+        <p>
+            <br>
+            <button>Log in!</button>
+        </p>
+        <a href='{% url "signup" %}'>create new account</a>
+    </div>
+</div>
+
+{% endblock content %}

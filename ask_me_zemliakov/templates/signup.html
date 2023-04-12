@@ -1,0 +1,57 @@
+{% extends "inc/base.html"%}
+
+{%block content%}
+
+<h2>Registration</h2>
+<p><span style="color: red">Sorry, this email address is already registered!</span></p>
+<div class="row">
+    <div class="col-2">Login</div>
+    <div class="col">
+        <input type="text" placeholder="dr_prepper" size="20">
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-2">Email</div>
+    <div class="col">
+        <input type="text" placeholder="myEmail@mail.ru" size="20">
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-2">NickName</div>
+    <div class="col">
+        <input type="text" placeholder="NoName" size="20">
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-2">Password</div>
+    <div class="col">
+        <input type="password" placeholder="some_password1" size="20">
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-2">Repeat password</div>
+    <div class="col">
+        <input type="password" placeholder="some_password1" size="20">
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-2">Upload avatar</div>
+    <div class="col">
+        <div class="row">
+            <div class="col-3">
+                <input type="text" placeholder="C:\путь к файлу" size="8">
+            </div>
+            <div class="col">
+                <button>Choose</button>
+            </div>
+        </div>
+       <p><br><button>Register!</button></p>
+    </div>
+</div>
+
+{% endblock content %}

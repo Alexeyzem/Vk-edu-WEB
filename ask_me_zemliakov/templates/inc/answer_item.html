@@ -1,0 +1,17 @@
+{% load static%}
+
+<div class="row">
+     <div class="comment">
+         <div class="row">
+             <div class="col-2">
+                 <div class="comment-avatar">
+                     <img src='{% static "img/ava.jpg" %}'>
+                 </div>
+             </div>
+             <div class="col">
+                 {{answer.text}}
+                 <div class="DownInBlock"><input type="checkbox"> <label>Correct!</label></div>
+             </div>
+         </div>
+     </div>
+ </div>

@@ -1,0 +1,104 @@
+main > .container{
+    padding: 60px 10px 0;
+}
+.question{
+    border: 2px solid black;
+    border-radius: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.question-avatar{
+    height: auto;
+    width: 80%;
+}
+.question-avatar > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 58%;
+}
+
+.MyButton{
+    padding: 10px;
+    margin-left: 6%;
+}
+.DownInBlock{
+margin-top: 7%;
+}
+
+.myQuestion-avatar{
+    height: 170px;
+    width: 170px;
+}
+.myQuestion-avatar > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 58%;
+}
+.right{
+    margin-left: 15px;
+}
+.comment{
+     height: 160px;
+    border: 2px solid black;
+    border-radius: 18px;
+    padding: 10px;
+    margin-bottom: 10px ;
+}
+.header-avatar{
+    height: 100px;
+    width: 100px;
+}
+.header-avatar > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 58%;
+}
+.comment-avatar{
+    height: 100px;
+    width: 100px;
+}
+.comment-avatar > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 58%;
+}
+.settings-form{
+    height: 40px;
+    width: 25%;
+    border: 2px solid black;
+    border-radius: 18px;
+    padding: 10px;
+    margin-bottom: 10px ;
+}
+.settings-form-avatar{
+    height: 40px;
+    width: 25%;
+    border: 2px solid black;
+    border-radius: 18px;
+    padding: 10px;
+    margin-bottom: 10px ;
+    margin-right: 5px;
+}
+.choose{
+    height: 40px;
+    width: 9%;
+    border: 2px solid black;
+    border-radius: 18px;
+    padding: 10px;
+    margin-bottom: 10px ;
+}
+.My-avatar{
+    height: 250px;
+    width: 250px;
+}
+.My-avatar > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 58%;
+}

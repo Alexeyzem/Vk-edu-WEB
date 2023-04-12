@@ -1,0 +1,15 @@
+{% extends "inc/base.html"%}
+{% load static%}
+{%block content%}
+
+<div>
+      <h2 style="display: inline-block" >Hot questions</h2>
+    </div>
+
+{% for question in questions %}
+    {% include "inc/question_item.html" %}
+{% endfor %}
+
+{% include  "inc/paginator.html" %}
+
+{% endblock content %}

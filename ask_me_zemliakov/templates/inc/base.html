@@ -1,0 +1,94 @@
+{% load static%}
+
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <title>ask_me</title>
+    <link rel = "stylesheet " href='{% static "css/bootstrap.css" %}'>
+    <link rel="stylesheet" href='{% static "css/my.css" %}'>
+</head>
+
+<body class="d-flex flex-column h-100">
+
+<header>
+    <div class="m-lg-3">
+        <div class="row">
+            <div class="col-7">
+                <h2><a href='http://127.0.0.1:8000'> Ask_Zemliakov</a></h2>
+                <div class="col">
+                    <input type = "text"  placeholder="some question">
+                    <input type="button" value="Search">
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-5">
+                        <a href='{% url "ask" %}'>Ask new question</a>
+                    </div>
+                    <div class="col-6">
+                        <div class="right">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="header-avatar">
+                                        <img src='{% static "img/ava2.jpeg"%}'>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <p>Dr.Pepper</p>
+                                        <p>
+                                        <a href='{% url "settings" %}'>settings</a>
+                                        <span>&nbsp</span>
+                                        <a href="">log_out</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+</header>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                {%block content %} {% endblock content %}
+            </div>
+            <div class="col-3">
+                <h2>Popular Tags</h2>
+                <div class="row">
+                    <div class="col">Perl</div>
+                    <div class="col"><span style="color: red; ">Python</span></div>
+                    <div class="col">TechnoPark</div>
+                    <br>
+                    <div class="col"><span style="color: red; ">MySQL</span> </div>
+                    <div class="col-6"><span style="color: green; ">django</span></div>
+                    <br>
+                    <div class="col">mail.ru</div>
+                    <div class="col">Voloshin</div>
+                    <div class="col"><span style="color: orange; ">Firefox</span></div>
+                </div>
+                <br>
+                <h2>Best Members</h2>
+                <div class="row">
+                    <p><a href="#">Mr.Hreef</a></p>
+                    <p><a href="#">Dr.House</a></p>
+                    <p><a href="#">Mr.Pupkin</a></p>
+                    <p><a href="#">TechnoPark</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="../static/js/bootstrap.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

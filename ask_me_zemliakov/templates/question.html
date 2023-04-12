@@ -1,0 +1,41 @@
+{% extends "inc/base.html"%}
+{% load static %}
+
+{% block content %}
+
+
+<div class="row">
+    <div class="col-3">
+        <div class="myQuestion-avatar">
+             <img src='{% static "img/ava.jpg" %}'>
+        </div>
+    </div>
+     <div class="col"><h2>{{question.title}}</h2>
+         Count like:
+         {{question.like}}
+         <button type="button">Up</button>
+         <span> &nbsp </span>
+         <button type="button">Down</button>
+         <br>
+         <br>
+         <p>{{question.text}}</p>
+         Tags:&nbsp
+         {% for tag in question.tags %}
+         <a href='{% url "tags" tag.text%}'>{{tag.text}}</a>&nbsp
+        {% endfor %}
+    </div>
+
+</div>
+
+<hr>
+{% for answer in question.answers %}
+    {% include "inc/answer_item.html" %}
+{% endfor %}
+
+<div class="row">
+    <textarea placeholder="Enter your answer here...">
+    </textarea>
+</div>
+<br>
+<button>Answer</button>
+{% endblock content %}

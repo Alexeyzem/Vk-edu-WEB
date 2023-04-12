@@ -1,0 +1,55 @@
+{% extends "inc/base.html"%}
+{% load static%}
+{%block content%}
+
+<h2>Settings: UserName</h2>
+<div class="row">
+    <div class="col-2">
+        <div class="DownInBlock">Login</div>
+    </div>
+    <div class="col">
+        <input type="text" placeholder="Alex_zem" size="20">
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-2">
+        <div class="DownInBlock">Email</div>
+    </div>
+    <div class="col">
+        <input type="text" placeholder="MyEmail.mail.ru" size="20">
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-2">
+        <div class="DownInBlock">NickName</div>
+    </div>
+    <div class="col">
+        <input type="text" placeholder="NoName" size="20">
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-2">
+        <div class="DownInBlock">UploadAvatar</div>
+    </div>
+    <div class="col">
+        <div class="My-avatar">
+            <img src='{% static "img/ava2.jpeg" %}' >
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-3">
+                <input type="text" placeholder="C:\ путь к файлу" size="10">
+            </div>
+            <div class="col">
+                <button>choose</button>
+            </div>
+        </div>
+        <br>
+        <button>Save</button>
+    </div>
+</div>
+
+    {% endblock content %}
